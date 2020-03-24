@@ -18,7 +18,12 @@
       <q-img src="statics/mountains.jpg" class="header-image absolute-top" />
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above :width="300" :breakpoint="600">
+    <q-drawer
+      v-model="leftDrawerOpen"
+      show-if-above
+      :width="300"
+      :breakpoint="600"
+    >
       <q-scroll-area
         style="height: calc(100% - 185px); margin-top: 185px; border-right: 1px solid #ddd"
       >
@@ -40,7 +45,11 @@
         </q-list>
       </q-scroll-area>
 
-      <q-img class="absolute-top" src="statics/mountains.jpg" style="height: 185px">
+      <q-img
+        class="absolute-top"
+        src="statics/mountains.jpg"
+        style="height: 185px"
+      >
         <div class="absolute-bottom bg-transparent">
           <q-avatar size="56px" class="q-mb-sm">
             <img
@@ -82,6 +91,9 @@ export default {
       let timeStamp = Date.now();
       return date.formatDate(timeStamp, "dddd MMMM D");
     }
+  },
+  meta: {
+    title: "Quasar To Do App"
   }
 };
 </script>
